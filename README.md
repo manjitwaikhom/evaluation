@@ -1,7 +1,7 @@
 # HOW TO GENERATE JWT TOKEN
 
 ## 1. Start the Spring application
-## 2. Generate token by hitting the POST API with below JSON body
+## 2. Generate token by hitting the POST API: localhost:8080/auth/login with below JSON body
 {
 "username": "user",
 "password": "password"
