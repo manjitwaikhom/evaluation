@@ -1,3 +1,18 @@
+# HOW TO GENERATE JWT TOKEN
+
+## 1. Start the Spring application
+## 2. Generate token by hitting the POST API with below JSON body
+{
+"username": "user",
+"password": "password"
+}
+## 3. Copy the token from the response body
+## 4.  Hit further APIs
+
+
+
+
+
 # Personal Book List with Google Books Integration
 
 ## Context
