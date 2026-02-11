@@ -1,24 +1,17 @@
-package com.example.demo.db;
+package com.example.demo.service;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+
 import lombok.*;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Entity
-@Data
-@NoArgsConstructor
-@Builder
-public class Book {
-    /**
-     * Google Books API id.
-     */
-    @Id
+public class BookDTO {
     private String id;
     private String title;
     private String author;
     private Integer pageCount;
 
-    public Book(String id, String title, String author,Integer pageCount) {
+    public BookDTO( String title, String author, Integer pageCount) {
         this.id = id;
         this.title = title;
         this.author = author;

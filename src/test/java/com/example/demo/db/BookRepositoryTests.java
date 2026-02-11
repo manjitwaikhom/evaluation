@@ -15,8 +15,8 @@ class BookRepositoryTests {
 
     @Test
     void testSaveAndFindAll() {
-        Book book1 = new Book("one", "Title One", "Author A");
-        Book book2 = new Book("two", "Title Two", "Author B");
+        Book book1 = new Book("one", "Title One", "Author A",100);
+        Book book2 = new Book("two", "Title Two", "Author B",300);
         bookRepository.save(book1);
         bookRepository.save(book2);
         List<Book> books = bookRepository.findAll();
